@@ -110,10 +110,18 @@
             the most powerful operational rocket in the world by a factor of two
           </p>
 
-          <img class="presentation__img" src="img/earth.jpg" alt="Earth" />
+          <video
+            class="presentation__video"
+            autoplay
+            poster="./video/poster.jpg"
+          >
+            <source src="./video/world.mp4" type="video/mp4" />
+            <source src="./video/world.webm" type="video/webm" />
+            Your browser doesn't support HTML5 video tag.
+          </video>
         </section>
 
-        <section class="overview">
+        <section class="overview rellax" data-rellax-speed="-3">
           <h2 class="overview__title">Falcon Heavy Overview</h2>
           <table class="overview__table">
             <tr>
@@ -168,6 +176,8 @@
             </p>
           </div>
         </section>
+
+        <section class="rocket rellax" data-rellax-speed="7"></section>
       </main>
       <footer class="page-footer">
         <div class="logo page-footer__logo">
@@ -257,5 +267,11 @@
         </div>
       </footer>
     </div>
+    <script src="./rellax/rellax.min.js"></script>
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax(".rellax");
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
