@@ -291,6 +291,8 @@ img {
 
 .overview__table {
   margin-bottom: 16%;
+  text-align: left;
+  max-width: 50%;
 }
 
 .overview__info {
@@ -305,10 +307,6 @@ img {
   margin: 0;
   padding: 0.8em 0;
   line-height: 1.85;
-}
-
-.overview__table {
-  text-align: left;
 }
 
 .overview__table th {
@@ -332,6 +330,11 @@ img {
 @media screen and (max-width: 1024px) {
   .overview {
     padding-top: 12%;
+  }
+
+  .overview__title {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -359,6 +362,10 @@ img {
     margin-left: 10%;
   }
 
+  .overview__table {
+    max-width: 100%;
+  }
+
   .overview__table th {
     text-transform: none;
   }
@@ -371,7 +378,6 @@ img {
 @media screen and (max-width: 600px) {
   .overview {
     padding-top: 12%;
-    margin-bottom: 30%;
   }
 
   .overview__info {
@@ -391,10 +397,6 @@ img {
 }
 
 @media screen and (max-width: 320px) {
-  .overview {
-    margin-bottom: 60%;
-  }
-
   .overview__info-title,
   .overview__title {
     font-weight: bold;
@@ -570,6 +572,7 @@ img {
   padding: 0.8em 4em;
   padding-right: 5.5em;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .page-footer__contacts-btn:hover,
@@ -614,4 +617,19 @@ img {
   .page-footer__logo {
     width: 30%;
   }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
