@@ -442,15 +442,16 @@ img {
     min-height: 50%;
     background-size: 100% 100%;
     top: 75%;
+    right: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .rocket {
     width: 55%;
-    min-height: 35%;
+    min-height: 45%;
     background-size: 100% 100%;
-    top: 90%;
+    top: 80%;
     right: 0;
   }
 }
@@ -544,6 +545,20 @@ img {
   padding: 0.7em;
   padding-left: 0;
   text-align: right;
+}
+
+.page-footer__contacts-mail {
+  color: #808080;
+  text-decoration: none;
+}
+
+.page-footer__contacts-mail:hover,
+.page-footer__contacts-mail:focus {
+  opacity: 0.5;
+}
+
+.page-footer__contacts-mail:active {
+  opacity: 0.8;
 }
 
 .page-footer__contacts-btn {
