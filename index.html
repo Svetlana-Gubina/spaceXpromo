@@ -7,13 +7,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>SpaceX</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <div class="page-header__logo logo">
+        <div class="page-header__logo logo" data-aos="fade-down">
           <svg
             class="logo__img"
             width="139"
@@ -105,8 +106,22 @@
 
       <main class="main">
         <section class="presentation">
-          <h1 class="presentation__title">Falcon Heavy</h1>
-          <p class="presentation__text">
+          <h1
+            class="presentation__title"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="800"
+          >
+            Falcon Heavy
+          </h1>
+          <p
+            class="presentation__text"
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
             the most powerful operational rocket in the world by a factor of two
           </p>
 
@@ -187,7 +202,13 @@
         <img class="rocket__img" src="img/falcon.png" alt="Falcon Heavy" />
       </main>
       <footer class="page-footer">
-        <div class="logo page-footer__logo">
+        <div
+          class="logo page-footer__logo"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="800"
+          data-aos-delay="300"
+        >
           <svg
             class="logo__img"
             width="139"
@@ -234,7 +255,13 @@
             />
           </svg>
         </div>
-        <ul class="page-footer__social-list">
+        <ul
+          class="page-footer__social-list"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="800"
+          data-aos-delay="400"
+        >
           <li class="page-footer__social-item">
             <a href="#" class="page-footer__social-link">
               Twitter
@@ -279,7 +306,8 @@
         </div>
       </footer>
     </div>
-    <script src="./rellax/rellax.min.js"></script>
+    <script src="js_libs/rellax/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
