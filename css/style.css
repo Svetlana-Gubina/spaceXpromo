@@ -789,7 +789,7 @@ input[type="radio"].visually-hidden {
 #d {
   width: 100%;
   max-width: 100%;
-  max-height: 100vh;
+  height: 100%;
   background: transparent;
   position: absolute;
   top: 0;
