@@ -16,6 +16,7 @@ body {
   position: relative;
   width: 100%;
   min-width: 320px;
+  min-height: 100vh;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -787,7 +788,8 @@ input[type="radio"].visually-hidden {
 
 #d {
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100vh;
   background: transparent;
   position: absolute;
   top: 0;
